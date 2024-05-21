@@ -1,0 +1,38 @@
+.btn-icon {
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.outline-none{
+    outline: none;
+}
+
+div[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+.question:focus,.option:focus{
+    border-color: black!important;
+}
+.btn-remove-option:hover,.btn-remove-image:hover{
+    color: red;
+}
+
+ul {
+    counter-reset: counter;
+}
+
+ul li:not(.section) {
+    counter-increment: counter;
+    list-style: none;
+}
+
+ul li:not(.section):before {
+    content: counter(counter) ".";
+}
